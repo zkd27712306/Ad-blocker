@@ -13,7 +13,7 @@ Installation method:
 Open the extension's developer mode,  
 first try dragging the .crx file in,  
 if that doesn't work, click 'Load unpacked extension'  
-and select the downloaded folder.  
+and select the download folder.  
 
 Note: Refresh the webpage if blocking doesn't work  
 Pause updates
