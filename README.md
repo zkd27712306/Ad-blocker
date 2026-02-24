@@ -6,6 +6,7 @@
 选择下载的文件夹。
 
 注：无法屏蔽时刷新网页
+
 暂停更新
 
 Installation method:  
