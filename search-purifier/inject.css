@@ -1,0 +1,66 @@
+/* ===== 隐藏所有已知广告容器 ===== */
+
+/* 广告容器 */
+[srcid="213"], [srcid="217"], [srcid="204"], 
+[srcid="2210"], [srcid="2134"], [srcid="28616"],
+[srcid="20811"], [srcid="28608"], [srcid="62112"],
+[data-placeid], .EC_result, .gp2k11k {
+    display: none !important;
+}
+
+/* 右侧区域 */
+#content_right {
+    display: none !important;
+}
+
+/* 底部相关搜索 */
+#rs, .rs-container, [class*="rs"], [id*="rs"] {
+    display: none !important;
+}
+
+/* 广告类名 */
+.ec_wisead, .ec-ad, .ec_ads, .ads-box, .ad-container {
+    display: none !important;
+}
+
+/* 广告iframe */
+iframe[src*="cpro.baidu"], iframe[src*="pos.baidu"] {
+    display: none !important;
+}
+
+/* ===== 360搜索广告隐藏 ===== */
+#sidebar, .sidebar, .right-side, .right-aside, 
+.aside-content, .hot-module, .recommend-box, 
+.right-box, .right-wrapper, .right-module, 
+.aside-right, .right-container, #right, 
+.right, .right-col, #right-col, #rightColumn, 
+.rightColumn, #right-column, #side, .side, 
+.side-bar, #side-bar {
+    display: none !important;
+}
+
+/* 360搜索右侧任何可能的内容 */
+body > div:not(#main):not(.search-result):not(.result-wrap) {
+    /* 谨慎使用，避免误删 */
+}
+
+/* ===== 搜狗广告隐藏 ===== */
+iframe[src*="c.gdt.qq.com"], iframe[src*="btrace.qq.com"] {
+    display: none !important;
+}
+
+[data-role="ad"], .ads-wrapper, .result-ad, .sponsor-result {
+    display: none !important;
+}
+
+/* 搜狗右侧区域 */
+#aside, .aside-ad, .right-ad, .sidebar-ad {
+    display: none !important;
+}
+
+/* ===== 通用广告隐藏 ===== */
+[class*="ad-"], [id*="ad-"], 
+[class*="sponsor"], [id*="sponsor"],
+[class*="promote"], [id*="promote"] {
+    display: none !important;
+}

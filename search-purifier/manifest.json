@@ -1,0 +1,60 @@
+{
+  "manifest_version": 3,
+  "name": "终极搜索引擎净化器",
+  "version": "4.0",
+  "description": "彻底清除百度、必应、搜狗、360、雅虎、谷歌、Yandex、DuckDuckGo的广告 + Taboola广告拦截",
+  "permissions": [
+    "scripting",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "*://*.baidu.com/*",
+    "*://*.bing.com/*",
+    "*://*.bing.com.cn/*",
+    "*://*.sogou.com/*",
+    "*://*.so.com/*",
+    "*://*.yahoo.com/*",
+    "*://*.google.com/*",
+    "*://*.google.com.hk/*",
+    "*://yandex.com/*",
+    "*://yandex.ru/*",
+    "*://duckduckgo.com/*",
+    "*://*.taboola.com/*",
+    "*://trc.taboola.com/*",
+    "*://cdn.taboola.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.baidu.com/s*",
+        "*://*.bing.com/search*",
+        "*://*.bing.com.cn/search*",
+        "*://*.sogou.com/s*",
+        "*://*.sogou.com/web*",
+        "*://*.so.com/s*",
+        "*://*.so.com/site*",
+        "*://*.yahoo.com/search*",
+        "*://*.yahoo.com/news*",
+        "*://*.google.com/search*",
+        "*://*.google.com.hk/search*",
+        "*://yandex.com/search*",
+        "*://yandex.ru/search*",
+        "*://duckduckgo.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "block_taboola",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}
